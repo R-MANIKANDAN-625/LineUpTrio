@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Three Men's Morris</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+<body>
+  <div id="win-overlay">You Win!</div>
+  <div id="lose-overlay"></div>
+
+  <div class="container">
+    <h1>Three Men's Morris</h1>
+
+    <div class="game-info">
+      <div class="status-container">
+        <div id="status">Place your piece (X)</div>
+      </div>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard" selected>Hard</option>
+      </select>
+      <button id="reset">Reset Game</button>
+    </div>
+
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="instructions">
+      <p><strong>How to Play:</strong></p>
+      <p>1. Place your 3 pieces (X)</p>
+      <p>2. Then move to adjacent cells</p>
+      <p>3. Get 3 in a row to win</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
